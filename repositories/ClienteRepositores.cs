@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using Projeto06.Entities;
+using Projeto06.Setings;
 using System;
 using System.Data.SqlClient;
 
@@ -15,7 +16,7 @@ namespace Projeto06.repositories
  VALUES(@Id, @Nome, @Cpf, @DataNascimento)
  ";
             //abrindo conexão com o banco de dados
-            using (var connection = new SqlConnection("  Integrated Security = True; ConnectTimeout = 30; Encrypt = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False"))
+            using (var connection = new SqlConnection(SqlSettings.GetConnectionString())
 
  {
                 //executando o comando INSERT no banco de dados
