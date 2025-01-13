@@ -10,7 +10,7 @@ namespace Projeto06.Setings
     {
         public static string GetConnectionString()
         {
-            return "Data Source=(localdb)\\MSSQLLocalDB;InitialCatalog = BDProjeto06; Integrated Security = True; ConnectTimeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False"
+            return "Data Source=(localdb)\\MSSQLLocalDB;InitialCatalog = BDProjeto06; Integrated Security = True; ConnectTimeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False";
         }
     }   
 }

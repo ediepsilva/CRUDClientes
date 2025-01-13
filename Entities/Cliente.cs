@@ -34,6 +34,8 @@ namespace Projeto06.Entities
             get => _cpf;
             set
             {
+
+
                 if (string.IsNullOrWhiteSpace(value))
                 {
                     throw new ArgumentException
@@ -47,7 +49,7 @@ namespace Projeto06.Entities
                     _cpf = value;
                 }
             }
-         }
+        }
         public DateTime DataNascimento
         {
             get => _dataNascimento;
